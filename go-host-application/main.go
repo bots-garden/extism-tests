@@ -21,12 +21,12 @@ func main() {
 	input := args[2]
 
 	// Plugin config
-	levelInfo := extism.Info
+	levelInfo := extism.LogLevelInfo
 
 	pluginConfig := extism.PluginConfig{
 		ModuleConfig: wazero.NewModuleConfig().WithSysWalltime(),
 		EnableWasi:   true,
-		LogLevel:     &levelInfo,
+		LogLevel:     levelInfo,
 	}
 
 	// Plugin manifest

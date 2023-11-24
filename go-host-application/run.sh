@@ -3,8 +3,8 @@ clear
 bat $0 --line-range 5:
 echo ""
 # args: wasm_file function_name config
-./hostapp ../05-js-plugin/hello-js.wasm \
-hello \
+go run main.go ../go-plugin/go-plugin.wasm \
+say_hello \
 "Bob Morane"
 
 echo ""
